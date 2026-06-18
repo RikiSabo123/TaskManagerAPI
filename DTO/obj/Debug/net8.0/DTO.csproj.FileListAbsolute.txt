@@ -1,0 +1,15 @@
+C:\תכנות\'שנה ב\c#\TaskManager\DTO\bin\Debug\net8.0\DTO.deps.json
+C:\תכנות\'שנה ב\c#\TaskManager\DTO\bin\Debug\net8.0\DTO.runtimeconfig.json
+C:\תכנות\'שנה ב\c#\TaskManager\DTO\bin\Debug\net8.0\DTO.dll
+C:\תכנות\'שנה ב\c#\TaskManager\DTO\bin\Debug\net8.0\DTO.pdb
+C:\תכנות\'שנה ב\c#\TaskManager\DTO\obj\Debug\net8.0\DTO.csproj.AssemblyReference.cache
+C:\תכנות\'שנה ב\c#\TaskManager\DTO\obj\Debug\net8.0\DTO.GeneratedMSBuildEditorConfig.editorconfig
+C:\תכנות\'שנה ב\c#\TaskManager\DTO\obj\Debug\net8.0\DTO.AssemblyInfoInputs.cache
+C:\תכנות\'שנה ב\c#\TaskManager\DTO\obj\Debug\net8.0\DTO.AssemblyInfo.cs
+C:\תכנות\'שנה ב\c#\TaskManager\DTO\obj\Debug\net8.0\DTO.csproj.CoreCompileInputs.cache
+C:\תכנות\'שנה ב\c#\TaskManager\DTO\obj\Debug\net8.0\DTO.dll
+C:\תכנות\'שנה ב\c#\TaskManager\DTO\obj\Debug\net8.0\refint\DTO.dll
+C:\תכנות\'שנה ב\c#\TaskManager\DTO\obj\Debug\net8.0\DTO.pdb
+C:\תכנות\'שנה ב\c#\TaskManager\DTO\obj\Debug\net8.0\DTO.genruntimeconfig.cache
+C:\תכנות\'שנה ב\c#\TaskManager\DTO\obj\Debug\net8.0\ref\DTO.dll
+c:\תכנות\'שנה ב\c#\TaskManager\DTO\obj\Debug\net8.0\DTO.sourcelink.json
