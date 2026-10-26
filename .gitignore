@@ -33,3 +33,7 @@ coverage.*
 # EF Core migrations snapshots and temporary files can be committed if needed.
 # Uncomment the next line if you want to ignore all migrations artifacts locally.
 # Migrations/
+.vs/
+bin/
+obj/
+.env
