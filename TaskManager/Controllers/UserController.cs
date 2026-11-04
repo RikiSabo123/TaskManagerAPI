@@ -8,28 +8,26 @@ namespace TaskManager.Controllers
     [Route("api/users")]
     public class UserController : Controller
     {
-        private string adminEmail="r0548515188@gmail.com";
-        private string adminPass = "1234";
         private readonly IUser _userBLL;
         public UserController(IUser userBLL)
         {
             this._userBLL = userBLL;
         }
-        [HttpGet("GetUser")]
-        public IActionResult GetUser(string email, string password)
+        // Credentials are sent in the request body, never in the URL,
+        // so they don't end up in browser history or server logs.
+        [HttpPost("login")]
+        public IActionResult Login([FromBody] LoginDTO credentials)
         {
             try
             {
-                var user = _userBLL.GetUser(email, password);
-                if (user == null)
-                {
-                    return NotFound("User not found");
-                }
-                return Ok(user);
+                var user = _userBLL.GetUser(credentials.Email, credentials.Password);
+                return Ok(UserResponseDTO.FromUser(user));
             }
-            catch (Exception ex)
+            catch (ArgumentException)
             {
-                return BadRequest(ex.Message);
+                // Same message for unknown email and wrong password,
+                // so the API doesn't reveal which emails are registered.
+                return Unauthorized("Invalid email or password");
             }
         }
         [HttpGet("GetAllUsers")]
@@ -39,7 +37,7 @@ namespace TaskManager.Controllers
             try
             {
                 var users = _userBLL.GetAllUsers();
-                return Ok(users);
+                return Ok(users.Select(UserResponseDTO.FromUser));
             }
             catch (Exception ex)
             {
@@ -84,11 +82,5 @@ namespace TaskManager.Controllers
                 return BadRequest(ex.Message);
             }
         }
-        //public UsersDTO GetUser(string email, string password);
-        ////just for manager
-        //public List<UsersDTO> GetAllUsers();
-        //public void AddUser(UsersDTO user);
-        //public void UpdateUser(UsersDTO user);
-        //public void DeleteUser(UsersDTO user);
     }
 }
