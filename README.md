@@ -55,7 +55,7 @@ TaskManager is an ASP.NET Core 8 Web API for managing users, categories, and tas
 ## Example Endpoints
 
 - GET /api/users/GetAllUsers
-- GET /api/users/GetUser?email=...&password=...
+- POST /api/users/login  (body: `{ "email": "...", "password": "..." }`)
 - POST /api/users
 - GET /api/tasks/GetTasksByUser
 - POST /api/tasks
